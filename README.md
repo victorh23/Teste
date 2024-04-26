@@ -1,5 +1,5 @@
-<h1 align="center">Sistema de Cadastro de Usuários</h1>
-<p align="center"> Um sistema de gerenciamento de usuários, com cadastro, autenticação, validação de senhas e listagem de usuários. Apenas usuários logados podem visualizar suas próprias informações e somente administradores podem visualizar informações de todos os usuários. Os usuários podem alterar suas senhas na tela de login se esquecerem.</p>
+<h1 align="center">Sistema de Gerenciamento de Usuários</h1>
+<p align="center"> Um sistema de gerenciamento de usuários contendo cadastro, autenticação, validação de senhas e lista de usuários. Apenas os usuários logados podem visualizar suas próprias informações e somente administradores podem visualizar informações de todos os usuários. Os usuários podem alterar suas senhas na tela de login se esquecerem.</p>
 </br>
 
 
@@ -24,14 +24,14 @@ Tecnologias e técnicas :
 
 ### Caracteristicas do projeto
 
-- [x] Cadastro de usuários
-- [x] Autenticação de usuários
-- [x] Criptografia de senha
-- [x] Validação de dados de cadastro
-- [x] Gerenciamento de usuários
-- [x] Listagem de usuários
-- [x] Exclusão de usuários (__ADMIN__)
-- [x] Alteração de senhas
+-  Cadastro de usuários
+-  Autenticação de usuários
+-  Criptografia de senha
+-  Validação de dados de cadastro
+-  Gerenciamento de usuários
+-  Listagem de usuários
+-  Exclusão de usuários (_Administradores_)
+-  Alteração de senhas
 
 </br></br>
 
@@ -75,11 +75,12 @@ $ npm install
 
 # Inicie a aplicação
 $ npm run dev
+
 ```
 
 ## Configurando o Banco de Dados
 
-- Instale o MySQL (versão 8 ou mais recente) como SERVER ONLY, selecionando o tipo de configuração como "Development ". Mantenha a porta padrão 3306 e forneça a senha "1234". Finalize a instalação.
+- Instale o MySQL versão 8 ou mais nova como SERVER ONLY, selecionando o tipo de configuração como "Development ". Mantenha a porta padrão 3306 e forneça a senha "1234". Finalize a instalação.
 
 - Se você estiver usando o Windows, vá até o diretório C > Arquivos de Programas > MySQL > BIN e copie a URL da pasta. Em seguida, clique com o botão direito do mouse no Meu Computador, vá em Propriedades, Configurações Avançadas do Sistema e adicione a URL copiada às variáveis de ambiente PATH.
 
@@ -100,14 +101,10 @@ $ npx sequelize-cli db:migrate
 $ npx sequelize db:seed:all
 
 // Para já adicionar o usuário ADMIN na tabela.
+
 ```
 
-
-
-
-
 - Agora você já pode realizar o cadastro de usuários e fazer as operações de gerenciamento de usuários através da aplicação.
-
 
 
 ## Considerações 
