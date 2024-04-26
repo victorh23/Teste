@@ -1,13 +1,9 @@
-<h1 align="center">Cadastro de Usuários</h1>
-<p align="center"> sistema de gerenciamento de usuários, com cadastro, autenticação, validação de senhas e listagem de usuários. Apenas usuários logados podem visualizar suas próprias informações e somente administradores podem visualizar informações de todos os usuários. Além disso, usuários podem alterar suas senhas na tela de login caso esqueçam.</p>
+<h1 align="center">Sistema de Cadastro de Usuários</h1>
+<p align="center"> Um sistema de gerenciamento de usuários, com cadastro, autenticação, validação de senhas e listagem de usuários. Apenas usuários logados podem visualizar suas próprias informações e somente administradores podem visualizar informações de todos os usuários. Os usuários podem alterar suas senhas na tela de login se esquecerem.</p>
 </br>
 
-<p align="center">
-  <img alt="Login" src="FRONT/src/assets/login.png" width="100%">
-</p>
 
-
-## Tecnologias e técnicas utilizadas:
+Tecnologias e técnicas :
 
 - [ExpressJS](https://expressjs.com/)
 - [React](https://pt-br.reactjs.org/),
@@ -26,7 +22,7 @@
 
 </br>
 
-### Features
+### Caracteristicas do projeto
 
 - [x] Cadastro de usuários
 - [x] Autenticação de usuários
@@ -38,23 +34,24 @@
 - [x] Alteração de senhas
 
 </br></br>
-<h2 align="center">Building</h2>
 
-## Pré-requisitos
 
-Antes de começar, você precisará das seguintes ferramentas:
+## Requisitos
+
+Antes de começar, você precisará ter na sua maquina:
 </br>
 
 
-- <img alt="Version NodeJS" src="https://img.shields.io/badge/NodeJs-v16-green">
-- <img alt="Version MySQL" src="https://img.shields.io/badge/MySQL-v16-blue">
+- Node js
+- MySQL
+
 
 ## Iniciando o Projeto
 
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/victorserpa/Registration.git>
+$ git clone <https://github.com/victorh23/teste.git>
 
 # Acesse a pasta do backend
 $ cd backend
@@ -82,13 +79,13 @@ $ npm run dev
 
 ## Configurando o Banco de Dados
 
-- Instale o MySQL (versão 8 ou mais recente) como SERVER ONLY, selecionando o tipo de configuração como "Development Machine". Mantenha a porta padrão 3306 e forneça a senha "1234". Finalize a instalação.
+- Instale o MySQL (versão 8 ou mais recente) como SERVER ONLY, selecionando o tipo de configuração como "Development ". Mantenha a porta padrão 3306 e forneça a senha "1234". Finalize a instalação.
 
 - Se você estiver usando o Windows, vá até o diretório C > Arquivos de Programas > MySQL > BIN e copie a URL da pasta. Em seguida, clique com o botão direito do mouse no Meu Computador, vá em Propriedades, Configurações Avançadas do Sistema e adicione a URL copiada às variáveis de ambiente PATH.
 
 - Abra o Prompt de Comando ou outro programa similar e digite `mysql -h localhost -u root -p`, pressionando enter. Será solicitada a senha "1234". Após inserir a senha, você estará dentro do MySQL.
 
-__Recomendamos executar o comando `create database cadastrodeusuarios` para criar a tabela de cadastro de usuários e evitar alterações no back-end.__
+__Recomendo executar o comando `create database cadastrodeusuarios` para criar a tabela de cadastro de usuários e evitar alterações no back-end.__
 
 ```
 - # Acesse a pasta do backend
@@ -107,25 +104,21 @@ $ npx sequelize db:seed:all
 
 
 
-<p align="center">
-  <img alt="Create Users" src="FRONT/src/assets/createUsers.png" width="100%">
-</p>
+
 
 - Agora você já pode realizar o cadastro de usuários e fazer as operações de gerenciamento de usuários através da aplicação.
 
-<p align="center">
-  <img alt="Users" src="FRONT/src/assets/users.png" width="100%">
-</p>
 
-## Considerações finais
+
+## Considerações 
 
 - Voce tem que se certificar de que o serviço do MySQL esteja iniciado antes de iniciar a aplicação.
 - Caso seja necessario, altere as configurações de segurança do MySQL para permitir a conexão local.
 - Não esqueça de configurar as variaveis de ambiente necessárias.
 - Lembre-se que o usuário pode se cadastrar, porém ao fazer login, somente poderá visualizar as informações dele mesmo. Para visualizar todos os usuários cadastrados, é necessário ser admin.
-- É possível para o usuário alterar sua senha através da tela de login
+- É possível para o usuário alterar sua senha através da tela de login.
 
 
----
+
 
 
